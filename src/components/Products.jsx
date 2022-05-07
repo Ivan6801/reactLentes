@@ -12,17 +12,25 @@ function Products() {
   };
 
   return (
-    <div className="Products">
-      <div className="Products-items">
-        {products.map((product) => (
-          <Product
-            key={product.id}
-            product={product}
-            handleAddToCart={handleAddToCart}
-          />
-        ))}
+    <>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+      <div className="Products">
+        <div className="Products-items">
+          {products.map((product) => (
+            <Product
+              key={product.id}
+              product={product}
+              handleAddToCart={handleAddToCart}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <br />
+    </>
   );
 }
 

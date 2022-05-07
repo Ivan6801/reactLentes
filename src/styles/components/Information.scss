@@ -3,7 +3,7 @@
   grid-gap: 2rem;
   grid-row-gap: 1.5em;
   display: grid;
-  margin: 0 0 4em 0;
+  margin: 0 1em 4em 1em;
 }
 .Information-buttons {
   display: flex;
@@ -88,4 +88,10 @@ input {
     width: 100%;
     display: block;
     outline: none;
+}
+
+@media (max-width: 500px) {
+  .Information {
+    grid-template-columns: 1fr;
+  }
 }

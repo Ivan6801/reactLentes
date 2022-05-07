@@ -20,33 +20,39 @@ function Checkout() {
   }
 
   return (
-    <div className="Checkout">
-      <div className="Checkout-content">
-        {cart.length > 0 ? <h3>Lista de pedidos:</h3> : <h3>Sin pedidos...</h3>}
-        {cart.map((item) => (
-          <div className="Checkout-item">
-            <div className="Checkout-element">
-              <img width={100} src={item.image} alt="" />
-              <h4>{item.title}</h4>
-              <span>${item.price}</span>
+    <>
+    <br />
+    <br />
+    <br />
+    <br />
+      <div className="Checkout">
+        <div className="Checkout-content">
+          {cart.length > 0 ? <h3>Lista de pedidos:</h3> : <h3>Sin pedidos...</h3>}
+          {cart.map((item) => (
+            <div className="Checkout-item">
+              <div className="Checkout-element">
+                <img width={100} src={item.image} alt="" />
+                <h4>{item.title}</h4>
+                <span>${item.price}</span>
+              </div>
+              <button
+                className="Checkout-button"
+                type="button"
+                onClick={handleRemove(item)}
+              >
+                <RiDeleteBack2Fill size={20} color="red" />
+              </button>
             </div>
-            <button
-              className="Checkout-button"
-              type="button"
-              onClick={handleRemove(item)}
-            >
-              <RiDeleteBack2Fill size={20} color="red" />
-            </button>
-          </div>
-        ))}
+          ))}
+        </div>
+          <h4>{`Precio Total: $ ${handleSumTotal()}`}</h4>
+        <div className="Checkout-sidebar">
+          <Link to="/checkout/information">
+            <button type="button">Continuar pedido</button>
+          </Link>
+        </div>
       </div>
-      <div className="Checkout-sidebar">
-        <h3>{`Precio Total: $ ${handleSumTotal()}`}</h3>
-        <Link to="/checkout/information">
-          <button type="button">Continuar pedido</button>
-        </Link>
-      </div>
-    </div>
+    </>
   );
 }
 
