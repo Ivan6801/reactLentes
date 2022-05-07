@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import '../styles/components/App.scss';
+import { GlobalStyle } from '../styles/GlobalStyles';
 import {
   Home,
   NotFound,
@@ -17,6 +17,7 @@ function App() {
   const initialState = useInitialState();
   return (
     <AppContext.Provider value={initialState}>
+      <GlobalStyle />
       <BrowserRouter>
         <Layout>
           <Routes>

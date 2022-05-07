@@ -72,14 +72,13 @@ input {
   margin: 10px 0 0 ;
 }
 .Information button {
-  box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    background-color: #63b8ee;
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
+    background-image: linear-gradient(to right, rgb(182, 25, 25), rgba(194, 4, 4, 0.431));
     border-radius: 6px;
     border: 1px solid #3866a3;
     display: inline-block;
     cursor: pointer;
-    color: #14396a;
+    color: #000000;
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;

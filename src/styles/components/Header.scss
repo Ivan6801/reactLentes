@@ -2,22 +2,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+  background-color: white;
+  margin-left: 1em;
 }
+
 .Header-checkout {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   justify-items: center;
-  width: 30px;
-  margin: 0 0 0 0.5em;
+  width: 40px;
+  height: 30px;
+  margin-right: 1em;
 }
 .Header-alert {
-  color: #33b13a;
+  color: #ffffff;
   font-size: 18px;
-  margin-left: 5px;
   font-weight: 800;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: black;
+  border-radius: 100%;
+  padding: 5px 0 0 20px;
 }
 .Header a {
   text-decoration: none;
-  color: #33b1ff;
+  color: #000000;
 }

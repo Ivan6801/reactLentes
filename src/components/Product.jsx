@@ -9,7 +9,7 @@ function Product({ product, handleAddToCart }) {
           {product.title}
           <span> $ {product.price}</span>
         </h2>
-          <p>{product.description}</p>
+        <p>{product.description}</p>
         <button type="button" onClick={handleAddToCart(product)}>
           Comprar
         </button>
